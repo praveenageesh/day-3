@@ -1,0 +1,10 @@
+// PRINTING ALL FLAG DATA IN CONSOLE
+function printdata(flag);
+	const flag = JSON.parse(this.reponsetext);
+  flag.foreach((coun) => console.log(no.of.flags);
+}
+
+var request = new XMLHttpRequest();
+request.addventistener("load",printdata);
+request.open("GET","https://restcountries.com/v3.1/all");
+request.send();
