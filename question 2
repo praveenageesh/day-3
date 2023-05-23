@@ -1,3 +1,5 @@
+question 2:
+
 // PRINTING ALL FLAG DATA IN THE CONSOLE
 function printData() {
   const countries = JSON.parse(this.responseText);
@@ -9,3 +11,18 @@ request.addEventListener("load", printData);
 request.open("GET", "https://restcountries.com/v3.1/all");
 request.send(); 
 
+
+question 3:
+
+// PRINTING ALL names,region ,sub-region,population IN THE CONSOLE
+
+  function printData() {
+  const countries = JSON.parse(this.responseText);
+  countries.forEach((coun) => console.log(coun.names.region.subregion.populaition));
+ } 
+
+var request = new XMLHttpRequest();
+request.addEventListener("load", printData);
+request.open("GET", "https://restcountries.com/v3.1/all");
+request.send(); 
+ 
